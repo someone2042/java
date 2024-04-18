@@ -17,4 +17,8 @@ public class Passager {
     public long getAge() {
         return Period.between(LocalDate.now(), date_naissance).getYears();
     }
+
+    public String toString() {
+        return "Nom : " + nom + ", Prenom : " + prenom + ", Age : " + getAge();
+    }
 }
