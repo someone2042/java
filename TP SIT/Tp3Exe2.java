@@ -1,4 +1,4 @@
-public class Tp2Exe2 {
+public class Tp3Exe2 {
 
     public static void main(String[] args) {
 
