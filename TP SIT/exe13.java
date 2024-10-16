@@ -15,4 +15,8 @@ public class exe13 {
         scanner.close();
         System.out.println("La somme des nombres impairs inférieurs à " + n + " est: " + somme);
     }
+
+    public static void main(String[] args) {
+        sommeNombresImpairs();
+    }
 }
