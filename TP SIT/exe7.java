@@ -26,7 +26,7 @@ public class exe7 {
             System.out.println("morbide ou massive");
         }
 
-        IndiceMasseGrasse(65, 1.75, 21, 1);
+        IndiceMasseGrasse(80, 1.8, 20, 0);
 
     }
 

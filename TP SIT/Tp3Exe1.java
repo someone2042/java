@@ -35,7 +35,8 @@ public class Tp3Exe1 {
         System.out.println("5. Tableau de caractères vers chaîne de caractères : " + charToString);
 
         // 6. Conversion d'une chaîne de caractères en tableau de caractères
-        String stringToChar = "World";
+        System.out.print("6. Entrez une chaine de caractére:");
+        String stringToChar = scanner.nextLine();
         char[] stringToArray = stringToChar.toCharArray();
         System.out.println("6. Chaîne de caractères vers tableau de caractères : " + Arrays.toString(stringToArray));
 
