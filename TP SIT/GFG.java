@@ -18,10 +18,8 @@ class GFG {
 				// summation for diagonals
 				if (j == i) {
 					for (int k = 0; k < j; k++)
-						sum += (int) Math.pow(lower[j][k],
-								2);
-					lower[j][j] = (int) Math.sqrt(
-							matrix[j][j] - sum);
+						sum += (int) Math.pow(lower[j][k], 2);
+					lower[j][j] = (int) Math.sqrt(matrix[j][j] - sum);
 				}
 
 				else {
@@ -30,8 +28,7 @@ class GFG {
 					// using L(j, j)
 					for (int k = 0; k < j; k++)
 						sum += (lower[i][k] * lower[j][k]);
-					lower[i][j] = (matrix[i][j] - sum)
-							/ lower[j][j];
+					lower[i][j] = (matrix[i][j] - sum) / lower[j][j];
 				}
 			}
 		}
@@ -56,10 +53,13 @@ class GFG {
 
 	// Driver Code
 	public static void main(String[] args) {
-		int n = 3;
-		int[][] matrix = new int[][] { { 4, 12, -16 },
-				{ 12, 37, -43 },
-				{ -16, -43, 98 } };
+		int n = 4;
+		int[][] matrix = new int[][] {
+				{ 4, 12, 12, 16 },
+				{ 12, 37, 37, 43 },
+				{ 12, 37, 43, 98 },
+				{ 16, 43, 98, 10 }
+		};
 
 		Cholesky_Decomposition(matrix, n);
 	}
