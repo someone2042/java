@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class exe11 {
     // Exercice 11 : Calcul des racines carrées
-    public static void calculerRacinesCarrees() {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double nombre;
 

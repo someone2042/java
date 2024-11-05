@@ -5,8 +5,7 @@
 class GFG {
 
 	// static int MAX = 100;
-	static void Cholesky_Decomposition(int[][] matrix,
-			int n) {
+	static void Cholesky_Decomposition(int[][] matrix, int n) {
 		int[][] lower = new int[n][n];
 
 		// Decomposing a matrix
