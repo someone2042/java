@@ -77,9 +77,22 @@ class Rectangle {
         }
     }
 
-    public static
-
     public static void main(String[] args) {
+        Rectangle a = new Rectangle();
+        Rectangle b = new Rectangle(10, 10);
+
+        a.setHauteur(21);
+        a.setLargeur(89);
+
+        System.out.println(a);
+        System.out.println(b);
+
+        System.out.println(b.perimetre());
+
+        System.out.println(b.surface());
+
+        System.out.println(a.comparer(b));
 
     }
+
 }
