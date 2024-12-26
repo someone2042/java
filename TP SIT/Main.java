@@ -77,36 +77,33 @@ class Point3D extends Point2D {
 
 public class Main {
     public static void main(String[] args) {
-        // Test Point2D class
+
         Point2D point2D = new Point2D();
-        System.out.println("Default Point2D: " + point2D); // Should print (0.0,0.0)
+        System.out.println("Default Point2D: " + point2D);
 
         point2D.setX(5.0f);
         point2D.setY(3.0f);
-        System.out.println("Updated Point2D: " + point2D); // Should print (5.0,3.0)
+        System.out.println("Updated Point2D: " + point2D);
 
         float[] coordinates2D = point2D.getXY();
-        System.out.println("Coordinates of Point2D: " + coordinates2D[0] + ", " + coordinates2D[1]); // Should print 5.0, 3.0
+        System.out.println("Coordinates of Point2D: " + coordinates2D[0] + ", " + coordinates2D[1]);
 
-        // Test Point3D class
         Point3D point3D = new Point3D();
-        System.out.println("Default Point3D: " + point3D); // Should print (0.0,0.0,0.0)
+        System.out.println("Default Point3D: " + point3D);
 
         point3D.setX(1.0f);
         point3D.setY(2.0f);
         point3D.setZ(3.0f);
-        System.out.println("Updated Point3D: " + point3D); // Should print (1.0,2.0,3.0)
+        System.out.println("Updated Point3D: " + point3D);
 
         float[] coordinates3D = point3D.getXYZ();
         System.out.println(
-                "Coordinates of Point3D: " + coordinates3D[0] + ", " + coordinates3D[1] + ", " + coordinates3D[2]); // Should print 1.0, 2.0, 3.0
+                "Coordinates of Point3D: " + coordinates3D[0] + ", " + coordinates3D[1] + ", " + coordinates3D[2]);
 
-        // Testing setXY method in Point2D
         point2D.setXY(4.0f, 5.0f);
-        System.out.println("Point2D after setXY: " + point2D); // Should print (4.0,5.0)
+        System.out.println("Point2D after setXY: " + point2D);
 
-        // Testing setZ method in Point3D
         point3D.setZ(6.0f);
-        System.out.println("Point3D after setZ: " + point3D); // Should print (1.0,2.0,6.0)
+        System.out.println("Point3D after setZ: " + point3D);
     }
 }

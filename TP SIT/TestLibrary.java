@@ -111,7 +111,7 @@ class Book {
 
     public void discount(double percentage) {
         double discountAmount = price * (percentage / 100);
-        price = Math.max(0, price - discountAmount); // Ensure price doesn't go below zero
+        price = Math.max(0, price - discountAmount);
     }
 }
 
@@ -140,6 +140,6 @@ public class TestLibrary {
         System.out.println("Is book1 available? " + book1.isAvailable());
         System.out.println("Is book2 available? " + book2.isAvailable());
 
-        book1.sell(40); // Trying to sell more than available
+        book1.sell(40);
     }
 }

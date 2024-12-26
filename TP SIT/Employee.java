@@ -8,7 +8,6 @@ public class Employee {
     private double salaire;
     private static int employeeCount = 0;
 
-    // Constructeurs
     public Employee() {
         employeeCount++;
     }
@@ -22,7 +21,6 @@ public class Employee {
         employeeCount++;
     }
 
-    // Getters et Setters
     public int getId() {
         return id;
     }
@@ -63,35 +61,29 @@ public class Employee {
         this.salaire = salaire;
     }
 
-    // Redéfinition de toString()
     @Override
     public String toString() {
         return "Employee[id=" + id + ", nom=" + prenom + " " + nom + ", Adresse=" + adresse + ", salaire=" + salaire
                 + "]";
     }
 
-    // Méthode getSalaireAnnuel()
     public double getSalaireAnnuel() {
         return salaire * 12;
     }
 
-    // Méthode augmenterSalaire()
     public double augmenterSalaire(int pourcentage) {
         salaire += salaire * (pourcentage / 100.0);
         return salaire;
     }
 
-    // Méthode estEligiblePourPromotion()
     public boolean estEligiblePourPromotion() {
         return salaire > 8000;
     }
 
-    // Méthode statique getEmployeeCount()
     public static int getEmployeeCount() {
         return employeeCount;
     }
 
-    // Méthode statique resetEmployeeCount()
     public static void resetEmployeeCount() {
         employeeCount = 0;
     }
@@ -101,7 +93,7 @@ public class Employee {
 
         System.out.print("Entrez le nombre d'employés : ");
         int n = scanner.nextInt();
-        scanner.nextLine(); // Consommer le retour à la ligne
+        scanner.nextLine();
 
         Employee[] employees = new Employee[n];
 

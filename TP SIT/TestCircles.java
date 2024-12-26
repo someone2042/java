@@ -81,13 +81,13 @@ class MyCircle {
     }
 
     public MyPoint getCenter() {
-        return center; // Note: Returning a reference, not a copy.
+        return center;
     }
 
     public void setCenter(MyPoint center) {
         this.center = center
 
-        ; // Note: Setting a reference, not a copy.
+        ;
     }
 
     public int getCenterX() {
@@ -95,7 +95,7 @@ class MyCircle {
     }
 
     public void setCenterX(int x) {
-        this.center.setX(x); // Accessing and modifying the existing center object
+        this.center.setX(x);
     }
 
     public int getCenterY() {
@@ -103,11 +103,11 @@ class MyCircle {
     }
 
     public void setCenterY(int y) {
-        this.center.setY(y); // Accessing and modifying the existing center object
+        this.center.setY(y);
     }
 
     public int[] getCenterXY() {
-        return new int[] { center.getX(), center.getY() }; // Return a copy of the coordinates.
+        return new int[] { center.getX(), center.getY() };
     }
 
     public void setCenterXY(int x, int y) {
@@ -127,29 +127,29 @@ public class TestCircles {
         MyCircle c2 = new MyCircle(p1, 5);
         MyCircle c3 = new MyCircle(3, 5, 2);
 
-        System.out.println(c1); // Output: MyCircle[radius=1, center=(0,0)]
-        System.out.println(c2); // Output: MyCircle[radius=5, center=(1,2)]
-        System.out.println(c3); // Output: MyCircle[radius=2, center=(3,5)]
+        System.out.println(c1);
+        System.out.println(c2);
+        System.out.println(c3);
 
         System.out.println("Area of c2: " + c2.getArea());
         System.out.println("Circumference of c3: " + c3.getCircumference());
         System.out.println("Distance between c1 and c2: " + c1.distance(c2));
 
         c1.setRadius(10);
-        c2.setCenter(new MyPoint(10, 10)); // Setting a new center point
-        c3.setCenterX(7); // Modifying the x-coordinate of the existing center
+        c2.setCenter(new MyPoint(10, 10));
+        c3.setCenterX(7);
         c3.setCenterY(9);
 
-        int[] centerXY = c3.getCenterXY(); // Get a copy
+        int[] centerXY = c3.getCenterXY();
         System.out.println("Center of c3: (" + centerXY[0] + "," + centerXY[1] + ")");
 
-        c3.setCenterXY(12, 15); // Set new coordinates
+        c3.setCenterXY(12, 15);
 
-        System.out.println(c1); // Output: MyCircle[radius=10, center=(0,0)]
-        System.out.println(c2); // Output: MyCircle[radius=5, center=(10,10)]
-        System.out.println(c3); // Output: MyCircle[radius=2, center=(12,15)]
+        System.out.println(c1);
+        System.out.println(c2);
+        System.out.println(c3);
 
-        System.out.println("Distance between two points: " + p1.distance(p2)); // Example using MyPoint.distance()
+        System.out.println("Distance between two points: " + p1.distance(p2));
 
     }
 }

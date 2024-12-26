@@ -11,6 +11,7 @@ class Vehicule {
     private int etat;
 
     public Vehicule() {
+
     }
 
     public Vehicule(String marque, String couleur) {
